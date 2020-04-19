@@ -32,7 +32,7 @@ const IndexPage = ({data}) => (
           <td dangerouslySetInnerHTML={{ __html: node.title }} />
           <td dangerouslySetInnerHTML={{ __html: node.year }} />
           <td dangerouslySetInnerHTML={{ __html: node.publisher }} style={{ fontStyle:`italic` }}/>
-          <td><a href={node.pubLink}>link</a>&nbsp;↗</td>
+          <td><a href={node.pubLink} target="_blank" rel="noopener noreferrer">link</a>&nbsp;↗</td>
         </tr>
       ))}
       </table>
