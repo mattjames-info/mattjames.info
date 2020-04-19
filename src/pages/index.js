@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
       <p>Matt is a writer, programmer, historian, and anthropologist.</p>
       <p>He writes, designs, programs and studies interactive narratives and digital literature, and many of his <a href="javascript:void(0)" onClick={() => scrollTo('#projects')}>projects</a> are borne out of intense archival research into forgotten historical subjects.</p>
       <p>His <a href="javascript:void(0)" onClick={() => scrollTo('#publications')}>writing</a> is often short-form, drawing inspiration from genres such as micro-fiction, micro-nonfiction, and prose poetry.</p>
-      <p>He graduated from Hampshire College with a Bachelor of Arts degree in Creative Writing and Antrhopology, concentrating on Migrant Studies and Digital Literature.</p>
+      <p>He graduated from Hampshire College with a Bachelor of Arts degree in Creative Writing and Anthropology, concentrating on Migrant Studies and Digital Literature.</p>
       <span id="prjcts" />
     </Card>
     <Projects />
