@@ -9,8 +9,7 @@ const Card = ({ children, cardTitle }) => (
             background: `white`
         }}
     >
-        {!cardTitle && <span></span>}
-        {cardTitle && <h1>{cardTitle}</h1>}
+        {cardTitle ? <h1>{cardTitle}</h1> : ``}
         <div>
             {children}
         </div>
