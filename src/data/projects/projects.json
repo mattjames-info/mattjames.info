@@ -1,0 +1,94 @@
+[
+    {
+        "title": "Longing for the Mud",
+        "slug": "longing-for-the-mud",
+        "timeframe": "2015",
+        "shortDescription": "Undergraduate thesis for Hampshire College, exploring the Quebec diaspora and themes of memory and loss.",
+        "longDescription": "Combining memoir, translated oral histories and the code to a failed point-and-click adventure game, this 160-page document is a testament to lost migrant history and the pitfalls that come with attempting to \"fill in the holes\" in memory.",
+        "linkTo": "/longing-for-the-mud.pdf",
+        "bannerImage": {
+            "source": "../../images/longingbanner.png",
+            "name": "",
+            "caption": "Photograph of Elmire Boucher, ca. 1920, from the book <span style='font-style:normal'>Ah les Etats!</span> by Jacques Rouillard"
+        },
+        "images": [
+            {
+                "source": "../../images/longing1.png",
+                "name": "",
+                "caption": "The front cover to <span style='font-style:normal'>Longing for the Mud</span>"
+            },
+            {
+                "source": "../../images/longing2.png",
+                "name": "",
+                "caption": "Interior spread detailing various assets contained in “The History of the Humble Casket,” the failed point-and-click adventure game outlined in <span style='font-style:normal'>Longing for the Mud</span>"
+            },
+            {
+                "source": "../../images/longing3.png",
+                "name": "",
+                "caption": "Interior spread summarizing “The History of the Humble Casket”"
+            },
+            {
+                "source": "../../images/longing4.png",
+                "name": "",
+                "caption": "Interior spread showcasing archival photography of tenemenet buildings in Lowell, MA"
+            }
+        ],
+        "sources": [
+            {
+                "sourceTitle": "<i>Ah les États!</i> by Jacques Rouillard",
+                "sourceLink": "https://www.editionsboreal.qc.ca/catalogue/livres/les-etats-171.html",
+                "sourceDescription": "Jacques Rouillard's collection of oral histories from Quebecois textile workers in New England from the turn of the century."
+            },
+            {
+                "sourceTitle": "<i>The Franco-Americans of New England</i> by Armand Chartier",
+                "sourceLink": "",
+                "sourceDescription": "A comprehensive history of the Quebecois in New England, from the very first migrants up to the present day."
+            }
+        ]
+    },
+    
+    {
+        "title": "Remember the Ember",
+        "slug": "remember-the-ember",
+        "timeframe": "2016 to present",
+        "shortDescription": "A 3D interactive narrative based on the oral histories of Quebecois migrants, built in Unity.",
+        "longDescription": "<p>This project utilizes archival photography, much of it gathered during my reasearch for <i>Longing for the Mud</i>, as the basis for reacreating the Quebec migrant experience over various stages in an interactive 3D environment. Much of the dialogue and text of the experience comes directly from contemporaneous oral histories.<p><b>Please note:</b> This project is still in the planning stages.<p>I will be regularly updating the \"sources\" section with links to major resources that are fueling and inspiring this project.</p>",
+        "bannerImage": {
+            "source": "../../images/rememberbanner.png",
+            "name": "",
+            "caption": ""
+        },
+        "sources": [
+            {
+                "sourceTitle": "The Brown Bulletin",
+                "sourceLink": "http://www.berlinnhhistoricalsociety.org/?page_id=261",
+                "sourceDescription": "An archive of \"The Brown Bulletin,\" the official company newsletter of The Brown Paper Company of Berlin, NH."
+            }
+        ]
+    },
+
+    {
+        "title": "COME OVER AND HELP VS",
+        "slug": "king-philips",
+        "timeframe": "2017 to present",
+        "shortDescription": "A 2D side-scrolling experience about the King Philip's War, utilizing 17th century woodblock prints, built in Unity.",
+        "longDescription": "<p>Drawing heavily on Jill Lepore's <i>The Name of War</i> and on the 17th Century woodblock prints the adorned the pages of so many \"captivity narratives\" popular at the time, this ongoing project will endeavor to explore the complicated and oft-overlooked history of King Philip's War.<p><b>Please note:</b> This project is still in the planning stages.<p>I will be regularly updating the \"sources\" section with links to major resources that are fueling and inspiring this project.</p>",
+        "bannerImage": {
+            "source": "../../images/comeoverbanner.png",
+            "name": "",
+            "caption": ""
+        },
+        "sources": [
+            {
+                "sourceTitle": "<i>The Name of War</i> by Jill Lepore",
+                "sourceLink": "https://scholar.harvard.edu/jlepore/publications/name-war-king-philip%E2%80%99s-war-and-origins-american-identity",
+                "sourceDescription": ""
+            },
+            {
+                "sourceTitle": "<i>Our Beloved Kin</i> by Lisa Brooks",
+                "sourceLink": "https://yalebooks.yale.edu/book/9780300244328/our-beloved-kin",
+                "sourceDescription": ""
+            }
+        ]
+    }
+]
