@@ -1,4 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-## a personal website
+## A Personal Website/Portfolio
 
-visit [mattjames.info](https://mattjames.info)
+Please visit [mattjames.info](https://mattjames.info) for more. Built with [Gatsby](https://www.gatsbyjs.org/).
