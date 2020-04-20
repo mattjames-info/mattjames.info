@@ -48,7 +48,7 @@ const IndexPage = ({data}) => (
           <SocialIcon url="http://twitter.com/mattjamesinfo" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
         <div>
-          <SocialIcon url="http://instagram.com/mattjames.info" bgColor="white" fgColor="blue" rel="noopener noreferrer" />
+          <SocialIcon url="http://instagram.com/mattjames.info" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
         <div>
           <SocialIcon url="http://github.com/mattjcarney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
