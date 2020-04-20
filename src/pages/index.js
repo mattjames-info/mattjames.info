@@ -6,6 +6,7 @@ import Projects from "../components/projects"
 import Nav from "../components/nav"
 import { graphql } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import { SocialIcon } from "react-social-icons"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -39,18 +40,18 @@ const IndexPage = ({data}) => (
     </Card>
     <Card cardTitle="contact">
       <p style={{ marginBottom: `1rem` }}>Best way to get in touch is through email (...but don't be afraid to check out my other social media profiles.)</p>
-      <div style={{ display: `flex`, flexWrap: `wrap`, flexDirection: `row`, width: `100%`, justifyContent: `space-evenly` }}>
+      <div style={{ display: `flex`, flexWrap: `wrap`, flexDirection: `row`, width: `100%`, justifyContent: `space-between` }}>
         <div>
-          <a href="mailto:hello@mattjames.info" target="_top">email</a>&nbsp;↗
+          <SocialIcon url="mailto:hello@mattjames.info" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
         <div>
-          <a href="http://twitter.com/mattjamesinfo" target="_blank" rel="noopener noreferrer">twitter</a>&nbsp;↗
+          <SocialIcon url="http://twitter.com/mattjamesinfo" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
         <div>
-          <a href="http://instagram.com/mattjames.info" target="_blank" rel="noopener noreferrer">instagram</a>&nbsp;↗
+          <SocialIcon url="http://instagram.com/mattjames.info" bgColor="white" fgColor="blue" rel="noopener noreferrer" />
         </div>
         <div>
-          <a href="https://github.com/mattjcarney" target="_blank" rel="noopener noreferrer">github</a>&nbsp;↗
+          <SocialIcon url="http://github.com/mattjcarney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
       </div>
     </Card>
