@@ -53,6 +53,9 @@ const IndexPage = ({data}) => (
         <div>
           <SocialIcon url="http://github.com/mattjcarney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
+        <div>
+          <SocialIcon url="http://linkedin.com/in/matt-j-carney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
+        </div>
       </div>
     </Card>
   </Layout>
