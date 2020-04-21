@@ -63,13 +63,16 @@ const Project = ({ pageContext, data }) => (
             <div>
               {i===0 ? `` : <hr style={{ borderWidth: `1px 0px 0px 0px`, borderStyle: `solid`, borderColor: `blue`, marginTop: `1rem`, height: `0` }} />}
               <div style={{ display: `flex`, flexDirection: `row`, justifyContent: `space-between` }}>
-                <div>
+                <div style={{ flex: `4` }}>
                   <h3 dangerouslySetInnerHTML={{ __html:source.sourceTitle }} />
                 </div>
                 {source.sourceLink ? 
-                <div>
-                  <a href={source.sourceLink} target="_blank" rel="noopener noreferrer">link</a>&nbsp;↗
-                </div>
+                <>
+                  <div style={{ flex: `1` }} />
+                  <div style={{ flex: `0` }}>
+                    <a href={source.sourceLink} target="_blank" rel="noopener noreferrer">link</a>&nbsp;↗
+                  </div>
+                </>
                 :
                 ``
                 }
