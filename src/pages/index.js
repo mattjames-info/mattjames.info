@@ -17,7 +17,6 @@ const IndexPage = ({data}) => (
       <p>He writes, designs, programs and studies interactive narratives and digital literature, and many of his <AnchorLink to="/#projects" title="projects" stripHash>projects</AnchorLink> are borne out of intense archival research into forgotten historical subjects.</p>
       <p>His <AnchorLink to="/#publications" title="publications" stripHash>writing</AnchorLink> is often short-form, drawing inspiration from genres such as micro-fiction, micro-nonfiction, and prose poetry.</p>
       <p>He graduated from Hampshire College with a Bachelor of Arts degree in Creative Writing and Anthropology, concentrating on Migrant Studies and Digital Literature.</p>
-      <span id="prjcts" />
     </Card>
     <Projects />
     <Card cardTitle="publications">
