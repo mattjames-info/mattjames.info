@@ -39,7 +39,7 @@ const IndexPage = ({data}) => (
       </table>
     </Card>
     <Card cardTitle="contact">
-      <p style={{ marginBottom: `1rem` }}>Best way to get in touch is through email (...but don't be afraid to check out my other social media profiles.)</p>
+      <p style={{ marginBottom: `1rem` }}>Best way to get in touch is through email!</p>
       <div style={{ display: `flex`, flexWrap: `wrap`, flexDirection: `row`, width: `100%`, justifyContent: `space-between` }}>
         <div>
           <SocialIcon url="mailto:hello@mattjames.info" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
