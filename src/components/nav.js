@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Nav = ({ dir, subdir, toHome }) => (
-    <div style={{ 
+    <div id="nav" style={{ 
         position: `sticky`, 
         top: `0`, 
         background: `white`, 
