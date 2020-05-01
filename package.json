@@ -36,12 +36,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "test": "echo \"no test specified\" && exit 0",
+    "preDeploy": "gatsby build --prefix-paths",
+    "deploy": "npm run preDeploy",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo 'Run your tests here'"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
