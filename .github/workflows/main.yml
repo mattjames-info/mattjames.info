@@ -21,4 +21,5 @@ jobs:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          remoteDir: "/home/mattjamescarney/mattjames.info/"
+          localDir: "public"
+          remoteDir: "/mattjames.info/"
