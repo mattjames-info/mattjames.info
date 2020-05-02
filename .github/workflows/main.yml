@@ -18,6 +18,6 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
-          ftp-server: ftp://ftp.ps604713.dreamhostps.com/
+          ftp-server: mattjames.info
           ftp-username: mattjamescarney
           ftp-password: ${{ secrets.FTP_PASSWORD }}
