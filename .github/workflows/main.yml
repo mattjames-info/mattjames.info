@@ -15,9 +15,11 @@ jobs:
         uses: jzweifel/gatsby-cli-github-action@master
         with:
           gatsby-arg: build
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
         with:
-          ftp-server: mattjames.info
-          ftp-username: mattjamescarney
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "/public"
+          remoteDir: "/home/mattjamescarney/mattjames.info/"
