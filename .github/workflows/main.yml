@@ -54,7 +54,7 @@ jobs:
         git config --local user.name "Matt James"
         git commit -m "Add build to public" -- public/
   
-      - name: Push changes
+    - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
