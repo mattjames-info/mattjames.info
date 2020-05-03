@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-      - 'public/'
+      - 'public/**'
 name: FTP Deploy
 jobs:
   FTP-Deploy-Action:
