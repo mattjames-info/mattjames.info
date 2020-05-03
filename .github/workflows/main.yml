@@ -48,7 +48,7 @@ jobs:
         npm install
         npm run build
     
-      - name: Commit files
+    - name: Commit files
       run: |
         git config --local user.email "hello@mattjames.fino"
         git config --local user.name "Matt James"
