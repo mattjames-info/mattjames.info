@@ -29,6 +29,8 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - ".github/**"
 name: Build Gatsby Site and Push to Repo
 jobs:
   Build-Gatsby-And-Push:
