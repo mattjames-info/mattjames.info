@@ -20,10 +20,20 @@ jobs:
         npm install
         npm run build
     
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.0.0
-      with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: public/
+    # - name: FTP-Deploy-Action
+    #   uses: SamKirkland/FTP-Deploy-Action@3.0.0
+    #   with:
+    #     ftp-server: ${{ secrets.FTP_SERVER }}
+    #     ftp-username: ${{ secrets.FTP_USERNAME }}
+    #     ftp-password: ${{ secrets.FTP_PASSWORD }}
+    #     local-dir: public/
+
+    - name: Deploy to Staging server
+      uses: easingthemes/ssh-deploy@v2.0.7
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        ARGS: "-rltgoDzvO"
+        SOURCE: "public/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
