@@ -1,25 +1,62 @@
-name: build and deploy build
-
+# OLD WORKFLOW -- KEEP FOR TESTING PURPOSES
+# name: build and deploy build
+#
+# on:
+#  push:
+#    branches:    
+#      - master
+#
+# jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v1
+#      - name: Build Gatsby Site
+#        uses: jzweifel/gatsby-cli-github-action@master
+#        with:
+#          gatsby-arg: build
+#      - name: Upload ftp
+#        uses: sebastianpopp/ftp-action@releases/v2
+#        with:
+#          host: ${{ secrets.FTP_SERVER }}
+#          user: ${{ secrets.FTP_USERNAME }}
+#          password: ${{ secrets.FTP_PASSWORD }}
+#          localDir: "public/"
+#          remoteDir: "/mattjames.info"
+          
 on:
   push:
-    branches:    
+    branches:
       - master
-
+name: Build and Publish Website
 jobs:
-  build:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-      - name: Build Gatsby Site
-        uses: jzweifel/gatsby-cli-github-action@master
-        with:
-          gatsby-arg: build
-      - name: Upload ftp
-        uses: sebastianpopp/ftp-action@releases/v2
-        with:
-          host: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          localDir: "public/"
-          remoteDir: "/mattjames.info"
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 2
+
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+        
+    - name: Build Project
+      run: |
+        npm install
+        npm run build --if-present
+        
+    - name: List output files
+      run: ls
+      
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: public/
+        git-ftp-args: --dry-run
