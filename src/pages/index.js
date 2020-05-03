@@ -50,10 +50,10 @@ const IndexPage = ({data}) => (
           <SocialIcon url="http://instagram.com/mattjames.info" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
         <div>
-          <SocialIcon url="http://github.com/mattjcarney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
+          <SocialIcon url="http://github.com/mattjamesinfo" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
         <div>
-          <SocialIcon url="http://linkedin.com/in/matt-j-carney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
+          <SocialIcon url="http://linkedin.com/in/matt-james-carney" bgColor="white" fgColor="blue" target="_blank" rel="noopener noreferrer" />
         </div>
       </div>
     </Card>
