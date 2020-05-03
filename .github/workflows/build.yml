@@ -29,7 +29,7 @@ on:
   push:
     branches:
       - master
-name: Build and Publish Website
+name: Build Gatsby Site and Push to Repo
 jobs:
   Build-Gatsby-And-Push:
     name: Build Gatsby Site and Push to Repo
@@ -49,7 +49,6 @@ jobs:
       run: |
         git config --local user.email "hello@mattjames.fino"
         git config --local user.name "Matt James"
-        git add public/
         git commit -m "Add build to public" -- public/
   
     - name: Push changes
