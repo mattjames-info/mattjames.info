@@ -20,13 +20,13 @@ jobs:
         npm install
         npm run build
     
-    # - name: FTP-Deploy-Action
-    #   uses: SamKirkland/FTP-Deploy-Action@3.0.0
-    #   with:
-    #     ftp-server: ${{ secrets.FTP_SERVER }}
-    #     ftp-username: ${{ secrets.FTP_USERNAME }}
-    #     ftp-password: ${{ secrets.FTP_PASSWORD }}
-    #     local-dir: public/
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: public/
 
     # - name: rsync deployments
     #   uses: burnett01/rsync-deployments@4.0
@@ -37,14 +37,3 @@ jobs:
     #     remote_host: ${{ secrets.REMOTE_HOST }}
     #     remote_user: ${{ secrets.REMOTE_USER }}
     #     remote_key: ${{ secrets.SSH_SECRET_KEY }}
-
-    - name: deploy to server
-        uses: AEnterprise/rsync-deploy@v1.0
-        env:
-          DEPLOY_KEY: ${{ secrets.SSH_SECRET_KEY }}
-          ARGS: "-e -c -r --delete"
-          SERVER_PORT: 22
-          FOLDER: "public/"
-          SERVER_IP: ${{ secrets.SERVER_IP }}
-          USERNAME: ${{ secrets.REMOTE_USER }}
-          SERVER_DESTINATION: ${{ secrets.REMOTE_PATH }}
