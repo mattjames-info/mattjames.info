@@ -24,7 +24,8 @@ jobs:
       run: |
         git config --local user.email "hello@mattjames.fino"
         git config --local user.name "Matt James"
-        git commit -m "Add build to public" -- build/
+        git add deploy/
+        git commit -m "Add build to public" -- deploy/
   
     - name: Push changes
       uses: ad-m/github-push-action@master
@@ -37,4 +38,4 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: build/
+        local-dir: deploy/
