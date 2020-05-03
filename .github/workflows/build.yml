@@ -2,8 +2,8 @@ on:
   push:
     branches:
       - master
-    paths-ignore:
-      - ".github/**"
+    # paths-ignore:
+    #   - ".github/**"
 name: Build Gatsby Site and Push to Repo
 jobs:
   Build-Gatsby-And-Push:
@@ -22,9 +22,9 @@ jobs:
     
     - name: Commit files
       run: |
-        git config --local user.email "hello@mattjames.fino"
+        git config --local user.email "hello@mattjames.info"
         git config --local user.name "Matt James"
-        git add deploy/
+        git add deploy
         git commit -m "Add build to public" -- deploy/
   
     - name: Push changes
