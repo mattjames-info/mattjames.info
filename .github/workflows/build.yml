@@ -4,10 +4,10 @@ on:
       - master
     # paths-ignore:
     #   - ".github/**"
-name: Build Gatsby Site and Push to Repo
+name: Build Gatsby Site and Publish
 jobs:
-  Build-Gatsby-And-Push:
-    name: Build Gatsby Site and Push to Repo
+  Build-Gatsby-And-Publish:
+    name: Build Gatsby Site and Publish
     runs-on: ubuntu-latest
 
     steps:
@@ -16,21 +16,9 @@ jobs:
         fetch-depth: 2
 
     - name: Build Gatsby Site
-      uses: jzweifel/gatsby-cli-github-action@master
-      with:
-        gatsby-arg: build
-    
-    - name: Commit files
       run: |
-        git config --local user.email "hello@mattjames.info"
-        git config --local user.name "Matt James"
-        git add deploy
-        git commit -m "Add build to public" -- deploy/
-  
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        npm install
+        npm run build
     
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
@@ -38,4 +26,4 @@ jobs:
         ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: deploy/
+        local-dir: public/
