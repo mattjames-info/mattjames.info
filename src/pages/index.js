@@ -37,7 +37,7 @@ const IndexPage = ({data}) => (
       ))}
       </table>
     </Card>
-    <Card cardTitle="contact">
+    <Card>
       {/* <p style={{ marginBottom: `1rem` }}>I love email and so should you!/p> */}
       <div style={{ display: `flex`, flexWrap: `wrap`, flexDirection: `row`, width: `100%`, justifyContent: `space-between` }}>
         <div>
