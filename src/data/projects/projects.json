@@ -44,7 +44,8 @@
                 "sourceLink": "",
                 "sourceDescription": "A comprehensive history of the Quebecois in New England, from the very first migrants up to the present day."
             }
-        ]
+        ],
+        "warning": false
     },
     
     {
@@ -52,7 +53,7 @@
         "slug": "remember-the-ember",
         "timeframe": "2016 to present",
         "shortDescription": "A 3D interactive narrative based on the oral histories of Quebecois migrants, built in Unity.",
-        "longDescription": "<p>This project utilizes archival photography, much of it gathered during my reasearch for <i>Longing for the Mud</i>, as the basis for reacreating the Quebec migrant experience over various stages in an interactive 3D environment. Much of the dialogue and text of the experience comes directly from contemporaneous oral histories.<p><b>Please note:</b> This project is still in the planning stages.<p>I will be regularly updating the \"sources\" section with links to major resources that are fueling and inspiring this project.</p>",
+        "longDescription": "<p>This project utilizes archival photography, much of it gathered during my reasearch for <i>Longing for the Mud</i>, as the basis for reacreating the Quebec migrant experience over various stages in an interactive 3D environment. Much of the dialogue and text of the experience comes directly from contemporaneous oral histories.</p>",
         "bannerImage": {
             "source": "../../images/rememberbanner.png",
             "name": "",
@@ -64,7 +65,8 @@
                 "sourceLink": "http://www.berlinnhhistoricalsociety.org/?page_id=261",
                 "sourceDescription": "An archive of \"The Brown Bulletin,\" the official company newsletter of The Brown Paper Company of Berlin, NH."
             }
-        ]
+        ],
+        "warning": true
     },
 
     {
@@ -72,7 +74,7 @@
         "slug": "come-over-and-help-vs",
         "timeframe": "2017 to present",
         "shortDescription": "A 2D side-scrolling experience about the King Philip's War, utilizing 17th century woodblock prints, built in Unity.",
-        "longDescription": "<p>Drawing heavily on Jill Lepore's <i>The Name of War</i> and on the 17th Century woodblock prints the adorned the pages of so many \"captivity narratives\" popular at the time, this ongoing project will endeavor to explore the complicated and oft-overlooked history of King Philip's War.<p><b>Please note:</b> This project is still in the planning stages.<p>I will be regularly updating the \"sources\" section with links to major resources that are fueling and inspiring this project.</p>",
+        "longDescription": "<p>Drawing heavily on Jill Lepore's <i>The Name of War</i> and on the 17th Century woodblock prints the adorned the pages of so many \"captivity narratives\" popular at the time, this ongoing project will endeavor to explore the complicated and oft-overlooked history of King Philip's War.</p>",
         "bannerImage": {
             "source": "../../images/comeoverbanner.png",
             "name": "",
@@ -94,6 +96,7 @@
                 "sourceLink": "https://ebba.english.ucsb.edu/",
                 "sourceDescription": "The bulk of the imagery (and much of the visual inspiration) comes from edited woodblock prints included alongside the ballads of this archive."
             }
-        ]
+        ],
+        "warning": true
     }
 ]

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Card from "../components/card"
 import { StaticQuery, graphql } from "gatsby"
-import Img  from "gatsby-image"
+import Img from "gatsby-image"
 
 const Projects = () => (
 
@@ -46,7 +46,8 @@ const Projects = () => (
                             <div>
                                 <Img 
                                     fluid={node.bannerImage.source.childImageSharp.fluid}
-                                    alt="" />
+                                    alt=""
+                                />
                             </div>
                             <div>
                                 {node.bannerImage.caption ?

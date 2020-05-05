@@ -17,6 +17,41 @@ $base-color: hsla(240, 100%, 50%, 1);
   }
 }
 
+.warning-title {
+  // background: repeating-linear-gradient(135deg, transparent, transparent 34px, $base-color 34px, $base-color 35px );
+  // background-size: auto auto;
+  // color: $base-color;
+  color: white;
+  background: $base-color;
+  padding: 1rem; 
+  border-width: 0px 0px 1px 0px; 
+  border-style: solid; 
+  border-color: $base-color;
+  font-weight: bold; 
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+
+  span::before {
+    display: block;
+    float: left;
+    content: "!";
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.3rem;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    margin-right: 1rem;
+  }
+}
+
+
+
 .linkTo-link {
   background: "white"; 
   color: $base-color; 
