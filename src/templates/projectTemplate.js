@@ -20,7 +20,7 @@ const Project = ({ pageContext, data }) => (
         <p dangerouslySetInnerHTML={{ __html: pageContext.longDescription }} />
         {pageContext.warning === true ?
           <>
-            <Card warning />
+            <Card cardTitle={pageContext.title} warning />
           </>
         :
           ``
