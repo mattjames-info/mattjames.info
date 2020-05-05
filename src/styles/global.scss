@@ -100,11 +100,28 @@ tr:last-of-type {
     padding-bottom: 0;
   }
 }
-.project-page-photo {
+.project-page-photo-container {
   padding-bottom: 1rem;
 
   &:last-of-type {
     padding-bottom: 0;
+  }
+}
+
+.project-page-photo {
+  background: $base-color;
+
+  img {
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%) contrast(175%);
+    filter: grayscale(100%) contrast(175%);
+    opacity: 1;
+  }
+
+  img:hover {
+    mix-blend-mode: normal;
+    -webkit-filter: grayscale(0%) contrast(100%);
+    filter: grayscale(0%) contrast(100%);
   }
 }
 

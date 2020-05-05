@@ -13,22 +13,22 @@
         },
         "images": [
             {
-                "source": "../../images/longing1.png",
+                "source": "../../images/longing1-color.png",
                 "name": "",
                 "caption": "The front cover to <span style='font-style:normal'>Longing for the Mud</span>"
             },
             {
-                "source": "../../images/longing2.png",
+                "source": "../../images/longing2-color.png",
                 "name": "",
                 "caption": "Interior spread detailing various assets contained in “The History of the Humble Casket,” the failed point-and-click adventure game outlined in <span style='font-style:normal'>Longing for the Mud</span>"
             },
             {
-                "source": "../../images/longing3.png",
+                "source": "../../images/longing3-color.png",
                 "name": "",
                 "caption": "Interior spread summarizing “The History of the Humble Casket”"
             },
             {
-                "source": "../../images/longing4.png",
+                "source": "../../images/longing4-color.png",
                 "name": "",
                 "caption": "Interior spread showcasing archival photography of tenemenet buildings in Lowell, MA"
             }

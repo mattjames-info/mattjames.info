@@ -44,10 +44,12 @@ const Project = ({ pageContext, data }) => (
           {
           data.projectsJson.images.map(image => (
             <>
-            <div className="project-page-photo">
-              <Img 
-                fluid={image.source.childImageSharp.fluid}
-                alt="" />
+            <div className="project-page-photo-container">
+              <div className="project-page-photo">
+                <Img 
+                  fluid={image.source.childImageSharp.fluid}
+                  alt="" />
+              </div>
               {image.caption ? 
                 <>
                   ↪ <i style={{ fontSize: `.75rem`, }} dangerouslySetInnerHTML={{ __html: image.caption }} />
